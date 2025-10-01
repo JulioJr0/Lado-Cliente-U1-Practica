@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practica LadoCliente</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png"/>
+        <h1>Gestionar calificaciones</h1>
+    </header>
+    <main>
+         <section class="overlay">
+            <label id="label">Agregar Alumno</label>
+            <form>
+                <label id="nombre" for="nombreAlumno">Nombre</label>
+                <input type="text" name="control" maxlength="50" id="nombreAlumno"/>
+                <input type="button" value="Agregar" />
+                <label id="erroresFormulario"></label>
+            </form>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del alumno</th>
+                    <th>Calificación</th>
+                    <th>Estatus</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ÁNGEL EDUARDO MARTINEZ GARCÍA</td>
+                    <td>100</td>
+                    <td>Aprobado</td>
+                    <td><i class="fas fa-trash"></i></td>
+                </tr>
+                <tr><td>REYES MENDOZA JULIO CESAR</td><td>100</td><td>Aprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>REYES MENDOZA KEVIN GAEL</td><td>100</td><td>Aprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>MATA VILLA ALFREDO HARAN</td><td>65</td><td>Reprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>PUENTE ENRIQUEZ JOSE HUMBERTO</td><td>65</td><td>Reprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>GARCÍA LEAL CARLOS EMILIANO</td><td>65</td><td>Reprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>Ángela Veronica Vannesa Ramírez de León</td><td>100</td><td>Aprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>SAUCEDO DE LA CRUZ DANIEL ALEJANDRO</td><td>100</td><td>Aprobado</td><td><i class="fas fa-trash"></i></td></tr>
+                <tr><td>Pedro Infante Fernández Cepada</td><td>65</td><td>Reprobado</td><td><i class="fas fa-trash"></i></td></tr>
+            </tbody>
+            <!-- <tfoot>
+                <tr>
+                    <th>Promedio: </th>
+                    <th>100</th>
+                </tr>
+            </tfoot> -->
+        </table>
+        <label id="erroresTabla"></label>
+    </main>
+    <footer>
+            <h1>Promedio: </h1>
+        </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
